@@ -71,7 +71,7 @@ export default function Dashboard() {
 
   return (
     <div
-      className={`min-h-screen ${darkMode ? "bg-slate-950" : "bg-slate-50"} transition-colors duration-300 relative overflow-hidden`}
+      className={`min-h-screen ${darkMode ? "bg-slate-50" : "bg-slate-950"} transition-colors duration-300 relative overflow-hidden`}
     >
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -97,15 +97,15 @@ export default function Dashboard() {
         <button
           onClick={() => setDarkMode(!darkMode)}
           className={`relative w-16 h-8 rounded-full transition-colors duration-300 ${
-            darkMode ? "bg-slate-700" : "bg-blue-400"
+            darkMode ? "bg-blue-400" : "bg-slate-700"
           }`}
         >
           <div
             className={`absolute top-1 left-1 w-6 h-6 rounded-full bg-white transition-transform duration-300 flex items-center justify-center text-xs ${
-              darkMode ? "translate-x-8" : "translate-x-0"
+              darkMode ? "translate-x-0" : "translate-x-8"
             }`}
           >
-            {darkMode ? "🌙" : "☀️"}
+            {darkMode ? "☀️" : "🌙"}
           </div>
         </button>
       </div>
@@ -116,7 +116,7 @@ export default function Dashboard() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
             <img 
-              src={darkMode ? "/image/logo-light.png" : "/image/logo-dark.png"}
+              src={darkMode ? "/image/logo-dark.png" : "/image/logo-light.png"}
               alt="Chrono School Logo" 
               className="w-64 h-auto transition-opacity duration-300"
             />
@@ -137,7 +137,7 @@ export default function Dashboard() {
                   }}
                 >
                   <div
-                    className={`relative ${darkMode ? "bg-slate-800/50" : "bg-white"} backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${darkMode ? "hover:shadow-cyan-500/50" : "hover:shadow-blue-500/50"} border ${darkMode ? "border-slate-700" : "border-slate-200"} cursor-pointer`}
+                    className={`relative ${darkMode ? "bg-white" : "bg-slate-800/50"} backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${darkMode ? "hover:shadow-cyan-500/50" : "hover:shadow-blue-500/50"} border ${darkMode ? "border-slate-700" : "border-slate-200"} cursor-pointer`}
                   >
                     <div
                       className={`w-16 h-16 mx-auto mb-4 rounded-xl ${module.bgColor} flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12`}
@@ -145,7 +145,7 @@ export default function Dashboard() {
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     <p
-                      className={`text-base font-semibold text-center leading-tight ${darkMode ? "text-slate-300" : "text-slate-700"}`}
+                      className={`text-base font-semibold text-center leading-tight ${darkMode ? "text-slate-700" : "text-slate-300"}`}
                     >
                       {module.label}
                     </p>
