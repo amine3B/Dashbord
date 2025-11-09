@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/image/logo-dark.png',
+        url: '/image/web-app-512x512.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/image/logo-dark.png',
+        url: '/image/web-app-512x512.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/image/logo-dark.png',
+        url: '/image/web-app-512x512.png',
         type: '/image/logo-dark.png',
       },
     ],
@@ -34,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><meta name="apple-mobile-web-app-title" content="MyWebSite" /></head>
       <body className={`font-sans antialiased`}>
         {children}
       </body>
