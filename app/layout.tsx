@@ -7,7 +7,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Chrono School',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -25,6 +24,7 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  manifest: '/manifest.webmanifest'
 }
 
 export default function RootLayout({
