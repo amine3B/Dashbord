@@ -7,18 +7,23 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Chrono School',
+  generator: 'v0.app',
   icons: {
     icon: [
+      {
+        url: '/image/logo-dark.png',
+        media: '(prefers-color-scheme: light)',
+      },
       {
         url: '/image/logo-dark.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
         url: '/image/logo-dark.png',
-        media: '(prefers-color-scheme: light)',
+        type: '/image/logo-dark.png',
       },
     ],
-    apple: '/image/logo-dark.png',
+    apple: '/apple-icon.png',
   },
 }
 
